@@ -1,0 +1,54 @@
+[
+  {
+    "flightSchedule": [
+      {
+        "flightNumber": "9602",
+        "airlineCode": "7G",
+        "departureTime": "2024-12-25 00:20",
+        "arrivalTime": "2024-12-25 01:50",
+        "departureAirport": "KKJ",
+        "arrivalAirport": "TPE",
+        "passengers": [
+          {
+            "Flight reference": "7G9602/25122024/0020",
+            "PNR No.": "AAAAA",
+            "First Name": "TARO",
+            "Middle Name": "",
+            "Last Name": "SORANO",
+            "Gender": "M",
+            "Date of Birth": "16071991",
+            "Nationality": "JPN",
+            "TravelDoc. Type": "P",
+            "TravelDoc. No": "123456",
+            "ExpiryDate": "31122034",
+            "Issue Country": "JPN",
+            "Seat No.": "",
+            "Cabin Class": "",
+            "PhoneNumber": "",
+            "EmailAddress": ""
+          },
+          {
+            "Flight reference": "7G9602/25122024/0020",
+            "PNR No.": "BBBBB",
+            "First Name": "HANAKO",
+            "Middle Name": "",
+            "Last Name": "LIU",
+            "Gender": "F",
+            "Date of Birth": "31012000",
+            "Nationality": "TPE",
+            "TravelDoc. Type": "P",
+            "TravelDoc. No": "333333",
+            "ExpiryDate": "31112025",
+            "Issue Country": "TPE",
+            "Seat No.": "1A",
+            "Cabin Class": "",
+            "PhoneNumber": "",
+            "EmailAddress": ""
+          }
+        ],
+        "submittedDateTime": "2024-12-26T10:44:50.000",
+        "createBy": "China Airline undefined"
+      }
+    ]
+  }
+]
