@@ -118,7 +118,7 @@ public class EdiService {
             String onePNR = writeOnePNR(itineraryDTO, passengersDTO);
             sb.append(onePNR);
         }
-        return "";
+        return sb.toString();
     }
 
     public String writeOnePNR(ItineraryDTO itineraryDTO,PassengersDTO passengersDTO){
