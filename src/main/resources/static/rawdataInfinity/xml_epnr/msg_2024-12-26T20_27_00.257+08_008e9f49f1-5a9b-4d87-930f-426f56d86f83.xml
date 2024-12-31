@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<IATA_PNRGOV_NotifRQ TimeStamp="2024-12-26T08:04:52" Version="15.1" CorrelationID="XS-b4273cf9-19c2-4433-84d2-92801ce49e8e" xmlns="http://www.iata.org/IATA/2007/00">
+    <Originator AirlineCode="7G"/>
+    <FlightLeg CarrierCode="7G" FlightNumber="9602" DepartureDateTime="2024-12-25T00:20:00" ArrivalDateTime="2024-12-25T01:50:00" CodeContext="IATA">
+        <DepartureAirport LocationCode="TPE"/>
+        <ArrivalAirport LocationCode="KKJ"/>
+    </FlightLeg>
+    <PNRs NumberOfPnrs="1">
+        <PNR NumberOfPassengers="2" PNR_TransDate="2024-12-26T08:04:52" PNR_CreationDate="2024-12-26">
+            <BookingRefID>
+                <CompanyName Code="7G"/>
+            </BookingRefID>
+            <Passenger RPH="1">
+                <GivenName>TARO</GivenName>
+                <Surname>SORANO</Surname>
+                <ContactInfo PhoneNumber="" EmailAddress=""/>
+                <DOC_SSR SSRCode="DOCS">
+                    <DOCS TravelDocType="P" TravelDocNbr="123456" IssuingLoc="JPN" DateOfBirth="16JUL91" Gender="M" ExpiryDate="31DEC34" Surname="SORANO" FirstGivenName="TARO"/>
+                </DOC_SSR>
+            </Passenger>
+            <Passenger RPH="2">
+                <GivenName>HANAKO</GivenName>
+                <Surname>LIU</Surname>
+                <ContactInfo PhoneNumber="" EmailAddress="" PhoneType="3"/>
+                <DOC_SSR SSRCode="DOCS">
+                    <DOCS TravelDocType="P" TravelDocNbr="333333" IssuingLoc="TPE" DateOfBirth="31JAN00" Gender="F" ExpiryDate="31DEC25" Surname="LIU" FirstGivenName="HANAKO"/>
+                </DOC_SSR>
+            </Passenger>
+            <Flight DepartureDateTime="2024-12-25T00:20:00" ArrivalDateTime="2024-12-25T01:50:00">
+                <DepartureAirport LocationCode="TPE"/>
+                <ArrivalAirport LocationCode="KKJ"/>
+                <OperatingAirline Code="7G" FlightNumber="9602"/>
+                <MarketingAirline Code="7G"/>
+                <BookingRefIDs/>
+                <CheckInInfo>
+                    <BoardingNumber RPH="1" SurnameRefNumber="1">
+                        <Passenger>
+                            <GivenName>TARO</GivenName>
+                            <Surname>SORANO</Surname>
+                        </Passenger>
+                        <SeatNumber CabinClass=""></SeatNumber>
+                    </BoardingNumber>
+                </CheckInInfo>
+                <CheckInInfo>
+                    <BoardingNumber RPH="2" SurnameRefNumber="2">
+                        <Passenger>
+                            <GivenName>HANAKO</GivenName>
+                            <Surname>LIU</Surname>
+                        </Passenger>
+                        <SeatNumber CabinClass="">1A</SeatNumber>
+                    </BoardingNumber>
+                </CheckInInfo>
+            </Flight>
+        </PNR>
+    </PNRs>
+</IATA_PNRGOV_NotifRQ>

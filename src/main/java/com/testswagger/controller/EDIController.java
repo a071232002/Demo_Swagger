@@ -28,4 +28,10 @@ public class EDIController {
         }
         return res;
     }
+
+    @PostMapping("/formatEdifact")
+    public String formatEdifact(@RequestBody String source) {
+        String NEW_LINE = System.lineSeparator();
+        return source.replace("'", "'" + NEW_LINE);
+    }
 }

@@ -103,7 +103,7 @@ public class EdiService {
     public String wirteEQNLevel0(ItineraryDTO itineraryDTO){
         StringBuilder sb = new StringBuilder();
         int passengersNum = itineraryDTO.getPassengers().size();
-        sb.append("EQN+" + passengersNum + "+'").append(lineBreak());
+        sb.append("EQN+" + passengersNum + "'").append(lineBreak());
         return sb.toString();
     }
 
@@ -126,10 +126,17 @@ public class EdiService {
 
         String airlineCode = itineraryDTO.getAirlineCode();
         String pnrNo = passengersDTO.getPnrRecordLocator();
+
         String surname = passengersDTO.getSurname();
         String firstName = passengersDTO.getFirstName();
         String otherNames = passengersDTO.getOtherNames();
+
         String refGR2 = "refGR2";
+
+        String dateOfBirth = dateTimeConvert(passengersDTO.getDateOfBirth(), DateTimeFormatter.ofPattern("yyyy-MM-dd"), "ddMMMyy");
+        String travelDocType = passengersDTO.getTravelDocType();
+        String nationality = passengersDTO.getNationality();
+
 
         sb.append(PNR_START_POINT).append(lineBreak());
         sb.append("RCI+"+ airlineCode + ":" + pnrNo +"'").append(lineBreak());
@@ -138,7 +145,9 @@ public class EdiService {
         sb.append("TIF+"+ surname + "+" + firstName + ":A:" + refGR2 + "::" + otherNames + "'").append(lineBreak()); //乘客姓名, 稱謂, 種類
         sb.append("FTI'").append(lineBreak()); //乘客在航空公司的識別碼
         sb.append("REF'").append(lineBreak()); //向國家、政府單位提供的旅客參考編號, 不等於PNR No
-        sb.append("SSR+").append(lineBreak()); //特定旅客資訊
+        //特定旅客資訊
+        sb.append("SSR+").append(lineBreak());
+        sb.append("SSR+'").append(lineBreak());
 
 
 
